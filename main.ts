@@ -1,5 +1,4 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
+process.loadEnvFile();
 import { application } from './bootstrap/application';
 
 const main = async () => {

@@ -2,7 +2,6 @@ export default (context: DomainServicesDependencies) => {
   const { validator } = context.app;
   const DomainError = context.utils.DomainError;
   const CODES = context.utils.http.CODES;
-  const { repository, query } = context.storage;
   const security = context.app.security;
   return {
     credentials(data: Partial<Credentials>) {

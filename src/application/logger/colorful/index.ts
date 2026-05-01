@@ -1,17 +1,10 @@
-const CLEAN = '\x1b[0m';
+import { palette } from 'naughty-util';
 
-const dye = (color: string, text: string) => `${color}${text}${CLEAN}`;
+const {
+  COLORS: { blue, green, red, yellow },
+  dye,
+} = palette;
 
-const COLORS = Object.freeze({
-  __proto__: null,
-  yellow: '\x1b[1;33m',
-  red: '\x1b[1;31m',
-  white: '\x1b[1;37m',
-  blue: '\x1b[1;34m',
-  green: '\x1b[1;32m',
-});
-
-const { blue, green, red, yellow } = COLORS;
 const intl = new Intl.DateTimeFormat(undefined, {
   year: '2-digit',
   month: '2-digit',

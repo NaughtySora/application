@@ -1,5 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config();
+process.loadEnvFile();
 import { describe, it } from 'node:test';
 import { data_access_load } from '../bootstrap/application';
 import pg from 'pg';
