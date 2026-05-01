@@ -15,5 +15,5 @@ export default (modules: HTTPModules) => {
       method: 'get',
       modules: modules.user.login,
     },
-  ]
+  ];
 };
